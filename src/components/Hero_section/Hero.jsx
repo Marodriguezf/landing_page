@@ -1,8 +1,8 @@
 import React from 'react';
-import Image1 from "../../assets/Hero/image1.png";
-import Image2 from "../../assets/Hero/image2.jpg";
-import Image3 from "../../assets/Hero/image3.jpg";
-import Image4 from "../../assets/Hero/image4.png";
+import Image1 from "/src/assets/Hero/image1.png";
+import Image2 from "/src/assets/Hero/image2.jpg";
+import Image3 from "/src/assets/Hero/image3.jpg";
+import Image4 from "/src/assets/Hero/image4.png";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 

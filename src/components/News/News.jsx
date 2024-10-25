@@ -1,7 +1,7 @@
 import React from 'react'
-import Image1 from "../../assets/News/Image1.jpg";
-import Image2 from "../../assets/News/Image2.jpg";
-import Image3 from "../../assets/News/Image3.jpg";
+import Image1 from "/src/News/Image1.jpg";
+import Image2 from "/src/assets/News/Image2.jpg";
+import Image3 from "/src/assets/News/Image3.jpg";
 const NewsData = [
 
     {
