@@ -1,21 +1,19 @@
 import React from 'react'
-import Image1 from "../../assets/Products/geneStream.jpg";
-import Image2 from "../../assets/Products/Chromosome.png";
-import Image3 from "../../assets/Products/Strategy.png";
+
 const ProductsData = [
     {
         id: 1,
-        img: Image1,
+        img: "/gallery/Products/geneStream.jpg",
         title: "geneStream"
     },
     {
         id: 2,
-        img: Image2,
+        img: "/gallery/assets/Products/Chromosome.png",
         title: "Chromosomal Mating"
     },
     {
         id: 3,
-        img: Image3,
+        img: "/gallery/assets/Products/Strategy.png",
         title: "STrategy"
     },
 

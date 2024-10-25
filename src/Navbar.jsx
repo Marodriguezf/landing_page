@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
-import Logo from "/src/assets/Logo_stgenetics.png";
 import { IoSearchCircle } from "react-icons/io5";
 import { FaShoppingCart, FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
+
+
+const ImageLogo =[
+    {
+        img:"/gallery/Logo_stgenetics.png"
+    }
+]
+
 
 const Menu = [
     { id: 1, name: "Home", link: "/#" },
@@ -36,7 +43,7 @@ const Navbar = ({ handleOrderPopup, cartItems = 0 }) => {
                 <div className="container flex justify-between items-center py-2">
                     <div>
                         <a href="/">
-                            <img src={Logo} alt="Logo" className="w-38" />
+                            <img src={ImageLogo} alt="Logo" className="w-38" />
                         </a>
                     </div>
                     <div className="flex justify-between items-center gap-4">

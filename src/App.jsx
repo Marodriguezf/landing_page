@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero_section/Hero';
-import Products from './components/Products/Products';
-import News from './components/News/News';
-import Footer from './components/Footer/Footer';
-import ProductList from './components/ProductList/ProductList';
-import SalesForm from './components/SalesForm/SalesForm';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Products from './Products';
+import News from './News';
+import Footer from './Footer';
+import ProductList from './ProductList';
+import SalesForm from './SalesForm';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

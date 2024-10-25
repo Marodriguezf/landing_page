@@ -1,29 +1,26 @@
 import React from 'react';
-import Image1 from "/src/assets/Hero/image1.png";
-import Image2 from "/src/assets/Hero/image2.jpg";
-import Image3 from "/src/assets/Hero/image3.jpg";
-import Image4 from "/src/assets/Hero/image4.png";
+
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const ImageList = [
   {
     id: 1,
-    img: Image1,
+    img: "/gallery/Hero/image1.png",
     title: "Much more than just a generic vision",
     description: "Integrated Precision",
   },
   {
     id: 2,
-    img: Image2,
+    img: "/gallery/Hero/image2.jpg",
   },
   {
     id: 3,
-    img: Image3,
+    img: "/gallery/Hero/image3.jpg",
   },
   {
     id: 4,
-    img: Image4,
+    img: "/gallery/Hero/image4.png",
   },
 ];
 

@@ -1,24 +1,21 @@
 import React from 'react'
-import Image1 from "/src/News/Image1.jpg";
-import Image2 from "/src/assets/News/Image2.jpg";
-import Image3 from "/src/assets/News/Image3.jpg";
 const NewsData = [
 
     {
         id: 1,
-        img: Image1,
+        img: "gallery/Image1.jpg",
         title: "Stand-Alone Genomic Test for Holstein Recessive BLIRD",
         description: "Livestock genomic testing leader and innovator, Genetic Visions-ST™, has developed a commercially available genomic test for a newly identified Holstein recessive Bovine Lymphocyte Intestinal Retention Defect (BLIRD). ",
     },
     {
         id: 2,
-        img: Image2,
+        img: "gallery/News/Image2.jpg",
         title: "Genetic Visions-ST™ Offers Exclusive Test for Slick Gene",
         description: "Genetic Visions-ST™ is excited to announce they will offer an exclusive test for the Slick gene to their three genetic testing packages, Vision+75™, Vision+50™ and Vision+20™",
     },
     {
         id: 3,
-        img: Image3,
+        img: "gallery/News/Image3.jpg",
         title: "Colored Breeds Specialist Catalog - August 2024",
         description: "The strength and diversity of the STgenetics Colored Breeds lineup continues in the August 2024 Colored Breeds Specialist Catalog!",
     }
