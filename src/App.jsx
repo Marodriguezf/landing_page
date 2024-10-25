@@ -6,7 +6,7 @@ import News from './News';
 import Footer from './Footer';
 import ProductList from './ProductList';
 import SalesForm from './SalesForm';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -43,7 +43,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter basename="/landing_page_react">
+    <HashRouter>
       <Navbar handleOrderPopup={handleOrderPopup} cartItems={cart.length} />
       <Routes>
         <Route
@@ -81,7 +81,7 @@ const App = () => {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
