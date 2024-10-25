@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from "../../assets/Logo_stgenetics.png";
+import Logo from "/src/assets/Logo_stgenetics.png";
 import { IoSearchCircle } from "react-icons/io5";
 import { FaShoppingCart, FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
 
