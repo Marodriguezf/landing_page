@@ -1,26 +1,25 @@
 import React from 'react';
-
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const ImageList = [
   {
     id: 1,
-    img: "/gallery/Hero/image1.png",
+    img: "Image1.png",
     title: "Much more than just a generic vision",
     description: "Integrated Precision",
   },
   {
     id: 2,
-    img: "/gallery/Hero/image2.jpg",
+    img: "Image2.jpg",
   },
   {
     id: 3,
-    img: "/gallery/Hero/image3.jpg",
+    img: "Image3.jpg",
   },
   {
     id: 4,
-    img: "/gallery/Hero/image4.png",
+    img: "Image4.png",
   },
 ];
 
@@ -49,6 +48,9 @@ const Hero = () => {
     sliderRef.current.slickPrev();
   };
 
+  // Función para construir la URL completa de la imagen
+  const getImageUrl = (imageName) => `${import.meta.env.BASE_URL}gallery/Hero/${imageName}`;
+
   return (
     <div className="relative overflow-hidden bg-slate-400">
       {/* Hero Section */}
@@ -58,7 +60,7 @@ const Hero = () => {
             {/* image section */}
             <div className="relative z-0">
               <img
-                src={data.img}
+                src={getImageUrl(data.img)} // Usamos la función getImageUrl para obtener la URL completa
                 alt=""
                 className="w-full h-auto object-cover"
               />
@@ -69,7 +71,7 @@ const Hero = () => {
               <h1 className="text-lg sm:text-2xl font-bold text-right">
                 {data.title}
               </h1>
-              <p className="text-3xl sm:text-5xl font-bold text-right lg:text-7xl   ">
+              <p className="text-3xl sm:text-5xl font-bold text-right lg:text-7xl">
                 {data.description}
               </p>
             </div>

@@ -5,14 +5,14 @@ import { FaShoppingCart, FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
 
 const ImageLogo =[
     {
-        img:"/gallery/Logo_stgenetics.png"
+        img:"/gallery/logo_stgenetics.png"
     }
 ]
 
 
 const Menu = [
     { id: 1, name: "Home", link: "/#" },
-    { id: 2, name: "Products", link: "productList" },
+    { id: 2, name: "Products", link: "/ProductList" },
     { id: 3, name: "Dairy", link: "/#" },
     { id: 4, name: "Beef", link: "/#" },
     { id: 5, name: "Beef on dairy", link: "/#" },
@@ -37,13 +37,17 @@ const Navbar = ({ handleOrderPopup, cartItems = 0 }) => {
         setDropdownOpen(!dropdownOpen); 
     };
 
+    
+  // Función para construir la URL completa de la imagen
+  const getImageUrl = (imageName) => `${import.meta.env.BASE_URL}gallery/${imageName}`;
+
     return (
         <div className="shadow-md bg-white dark:text-white duration-200 relative z-40">
             <div className="bg-primary/20">
                 <div className="container flex justify-between items-center py-2">
                     <div>
                         <a href="/">
-                            <img src={ImageLogo} alt="Logo" className="w-38" />
+                        <img src={getImageUrl(ImageLogo[0].img)} alt="Logo" className="w-38" />
                         </a>
                     </div>
                     <div className="flex justify-between items-center gap-4">
