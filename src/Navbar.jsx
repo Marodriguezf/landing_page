@@ -3,16 +3,16 @@ import { IoSearchCircle } from "react-icons/io5";
 import { FaShoppingCart, FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
 
 
-const ImageLogo =[
+const ImageLogo = [
     {
-        img:"/gallery/logo_stgenetics.png"
+        img: `${import.meta.env.BASE_URL}/gallery/logo_stgenetics.png`
     }
 ]
 
 
 const Menu = [
-    { id: 1, name: "Home", link: "/#" },
-    { id: 2, name: "Products", link: "/" },
+    { id: 1, name: "Home", link: `${import.meta.env.BASE_URL}/#` },
+    { id: 2, name: "Products", link: `${import.meta.env.BASE_URL}/productList` },
     { id: 3, name: "Dairy", link: "/#" },
     { id: 4, name: "Beef", link: "/#" },
     { id: 5, name: "Beef on dairy", link: "/#" },
@@ -28,26 +28,23 @@ const DropdownLinks = [
 
 const Navbar = ({ handleOrderPopup, cartItems = 0 }) => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false); 
+    const [dropdownOpen, setDropdownOpen] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
     const toggleDropdown = () => {
-        setDropdownOpen(!dropdownOpen); 
+        setDropdownOpen(!dropdownOpen);
     };
 
-    
-  // Función para construir la URL completa de la imagen
-  const getImageUrl = (imageName) => `${import.meta.env.BASE_URL}gallery/${imageName}`;
 
     return (
         <div className="shadow-md bg-white dark:text-white duration-200 relative z-40">
             <div className="bg-primary/20">
                 <div className="container flex justify-between items-center py-2">
                     <div>
-                        <a href="/">
-                        <img src={getImageUrl(ImageLogo[0].img)} alt="Logo" className="w-38" />
+                        <a href={`${import.meta.env.BASE_URL}/`}>
+                            <img src={ImageLogo[0].img} alt="Logo" className="w-38" />
                         </a>
                     </div>
                     <div className="flex justify-between items-center gap-4">
@@ -83,9 +80,8 @@ const Navbar = ({ handleOrderPopup, cartItems = 0 }) => {
             </div>
             {/* Sidebar for mobile */}
             <div
-                className={`fixed top-0 left-0 h-full w-[250px] bg-white z-[9999] shadow-lg transform ${
-                    menuOpen ? 'translate-x-0' : '-translate-x-full'
-                } transition-transform duration-300 sm:hidden`}
+                className={`fixed top-0 left-0 h-full w-[250px] bg-white z-[9999] shadow-lg transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'
+                    } transition-transform duration-300 sm:hidden`}
             >
                 <ul className="flex flex-col items-start p-5">
                     {Menu.map((data) => (
@@ -100,7 +96,7 @@ const Navbar = ({ handleOrderPopup, cartItems = 0 }) => {
                             <span>Contact</span>
                             <FaCaretDown className={`ml-2 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
                         </div>
-                        {dropdownOpen && ( 
+                        {dropdownOpen && (
                             <div className="mt-2 pl-4">
                                 <ul>
                                     {DropdownLinks.map((data) => (

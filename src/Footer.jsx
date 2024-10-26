@@ -8,9 +8,9 @@ import {
     FaEnvelope
 } from "react-icons/fa";
 
-const ImageLogo =[
+const ImageLogo = [
     {
-        img:"/gallery/Logo_stgenetics.png"
+        img: `${import.meta.env.BASE_URL}/gallery/logo_stgenetics.png`
     }
 ]
 
@@ -32,7 +32,9 @@ const Footer = () => {
                 {/* Company Details */}
                 <div className="py-8 px-4">
                     <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-                        <img src={ImageLogo} alt="STgenetics Logo" className="max-w-[200px]" />
+                        <a href={`${import.meta.env.BASE_URL}/`}>
+                            <img src={ImageLogo[0].img} alt="Logo" className="w-38" />
+                        </a>
                     </h1>
                     <p>
                         STgenetics® is making the world greener, more sustainable and profitable.

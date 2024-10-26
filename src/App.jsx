@@ -66,7 +66,7 @@ const App = () => {
           }
         />
         <Route
-          path="/ProductList"
+          path="/productList"
           element={
             <>
               <ProductList addToCart={addToCart} />
