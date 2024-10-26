@@ -12,7 +12,7 @@ const ImageLogo =[
 
 const Menu = [
     { id: 1, name: "Home", link: "/#" },
-    { id: 2, name: "Products", link: "/ProductList" },
+    { id: 2, name: "Products", link: "/" },
     { id: 3, name: "Dairy", link: "/#" },
     { id: 4, name: "Beef", link: "/#" },
     { id: 5, name: "Beef on dairy", link: "/#" },
